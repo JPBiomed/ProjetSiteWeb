@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Popoleo';
+    src: url('Cookie-Regular.ttf') format('truetype')
+}
+#blockpage
+{
+	display:flex;
+	flex-direction: row;
+	margin:auto;
+}
+
+#lisere
+{
+	position:left;
+    background-image: url("fondgrey.jpg");
+	width: 10%;
+}
+
+
+#Titre
+{
+	display:flex;
+	flex-direction: row;
+	margin:auto;
+	justify-content: space-between;
+}
+
+
+#photo
+{
+	float:right;
+}
+#vraiPage
+{
+	background-image: url("image.jpg");
+}
+
+#MesExperiences
+{
+	display:flex;
+	flex-direction: row;
+}
+
+img
+{
+    float: right;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+}
+#menu
+{
+	margin:auto;
+	text-align: justify;
+	border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+    width:25%;
+    padding:10px;
+}
+
+p
+{
+    font-family: Popoleo, Arial, Verdana, sans-serif;
+    text-align: justify;
+    font-size: medium;
+
+}
+
+#AllArticles
+{
+	display:flex;
+	flex-direction: column;
+}
+article
+{
+	margin:auto;
+	width:75%;
+	
+}
+.Experience
+{
+	margin:auto;
+}
+
+h1
+{
+
+    font-family: Impact, "Arial Black", Popoleo, Verdana, sans-serif;
+    text-align: center;
+    font-size: x-large;
+    opacity: 1;
+}
+
+h2
+{
+
+    font-family: Impact, "Arial Black", Popoleo, Verdana, sans-serif;
+    text-align: center;
+    font-size: x-large;
+    opacity: 1;
+}
+
+/* Pour les classes on met un point */
+
+
+/* Pour les id  on met un hashtag */
+
+@media screen and (max-width: 1024px)
+{
+#lisere
+{
+	display:none;
+} /* Rédigez vos propriétés CSS ici */
+#MesExperiences
+{
+	flex-direction: column;
+}
+}

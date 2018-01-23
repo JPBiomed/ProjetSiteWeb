@@ -1,0 +1,38 @@
+{% extends "blog/base.html" %}
+
+{% block title %}{{ article.titre }}{% endblock %}
+
+{% block content %}
+
+	<p>
+		<a href="{% url 'accueil' %}">Retour à la liste des articles</a>
+	</p>
+
+	<h2 class="titre-article">{{ article.titre }}</h2>
+	<p class="infos-article">Par {{ article.auteur }}, le {{ article.date }}</p>
+
+	<div class="contenu-article">
+		{{ article.contenu|safe }}
+	</div>
+
+	<h3 class="titre-comments">Commentaires</h3>
+
+	<h4>Poster votre propre commentaire</h4>
+	<form method="post" action="" class="pure-form">
+
+		<!-- A vous de remplir le formulaire également -->
+
+		<p style="text-align:center">
+			<input class="pure-button pure-button-primary" type="submit" />
+		</p>
+	</form>
+
+	<div class="clear"></div>
+
+	
+	<div class="commentaire">
+		<p>Maxime, le 28 mai 2019</p>
+		<p>Ceci est un exemple de commentaire, qui est à remplacer par votre modèle</p>
+	</div>
+
+{% endblock %}
