@@ -1,0 +1,51 @@
+{% load static %}
+<!doctype html>
+<html lang="fr">
+<head>
+    <title>{% block title %}Mon blog{% endblock %} - Crêpes bretonnes</title>
+    <link rel="stylesheet" href="{% static 'blog/styles2.css' %}" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div><strong><a href="{% url 'accueil' %}">Accueil</a></strong></div>
+            <div>
+            <strong>Professionnel</strong>
+            <ul>
+                <li><a target=blank href="{% static 'doc/CV.pdf' %}">CV</a></li>
+                <li>Quiz</li>
+                <li><a href="mailto:jason.pettiaux@gmail.com" class="emaildress" title="Je vous répondrai au plus vite">Envoyez-moi un e-mail !</a></li>
+            </ul>
+            </div>
+            <div><strong>Article</strong>
+            <ul>
+                <li>Science et Technologie</li>
+                <li>Psychologie</li>
+                <li>Intérêt</li>
+            </ul>
+            </div>
+            <div><strong>Apprendre</strong>
+            <ul>
+            <li>Youtube</li>
+            <li>Livres</li>
+            <li>Mes Astuces</li>
+            </ul>
+            </div>
+        
+
+        <div id="adminAccess">
+        	<a href="{% url 'admin:index' %}">Admin</a>
+        </div>
+        </nav>
+    </header>
+
+    <div class="container">
+    	{% block content %}{% endblock %}
+    </div>
+            
+    <footer>
+        Mon super blog - Powered by Django
+    </footer>
+</body>
+</html>

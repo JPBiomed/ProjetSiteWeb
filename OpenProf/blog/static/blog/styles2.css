@@ -1,0 +1,34 @@
+header{
+    width:100%;
+}
+nav{
+    display:flex;
+    flex-direction: row;
+    background-color:green;
+    border-radius: 5px;
+    border-color: rgb(244,197,209);
+    border-width: 1px ;
+    border-style: solid;
+    padding :30px;
+    justify-content: space-around;
+}
+nav div{
+    background-color:orange;
+    border-radius: 5px;
+    border-color: rgb(244,197,209);
+    border-width: 1px ;
+    border-style: solid;
+    padding :15px;
+    margin : 5px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin :0;
+}
+@media screen and (max-width:600px) {
+    nav {
+        display:flex;
+        flex-direction: column;
+    }
+}

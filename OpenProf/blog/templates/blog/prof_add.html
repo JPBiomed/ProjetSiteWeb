@@ -1,0 +1,11 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+
+<form class="form_p" action="" method="post">
+  {% csrf_token %}
+  {{form.as_p}}
+  <button type="submit" name="button">Valider</button>
+</form>
+
+{% endblock %}
